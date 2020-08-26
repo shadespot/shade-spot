@@ -42,9 +42,5 @@
     "eject": "expo eject",
     "storybook": "start-storybook -p 7007"
   },
-  "expo": {
-    "name": "Shade Spot",
-    "slug": "shade-spot"
-  },
   "private": true
 }
