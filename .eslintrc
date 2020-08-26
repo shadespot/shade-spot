@@ -1,0 +1,22 @@
+{
+  "extends": "airbnb", // extend airbnb's JavaScript style guide: https://github.com/airbnb/javascript
+  "parser": "babel-eslint", // allows us to parse the code with babel so that jsx code won"t be considered an error
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "tsx": true
+    }
+  },
+  "rules": {
+    "comma-dangle": ["error", "always-multiline" ],
+    "func-names": 0,
+    "global-require": "off",
+    "semi": 1,
+    "space-before-function-paren": ["error", {
+      "anonymous": "never",
+      "named": "always",
+      "asyncArrow": "always"
+    }],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }] // only return an error if JSX syntax is used on files other than those with .js or .jsx file extension
+  }
+}
