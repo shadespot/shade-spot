@@ -68,6 +68,6 @@
     "predeploy": "expo build:web"
   },
   "private": true,
-  "homepage": "http://shadepot.github.io/shade-spot-rn",
+  "homepage": "http://shadespot.github.io/shade-spot-rn",
   "version": "0.1.0"
 }
