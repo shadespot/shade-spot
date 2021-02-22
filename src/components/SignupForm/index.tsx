@@ -6,7 +6,7 @@ import { Button, Text, TextInput } from "react-native-paper";
 const isDevelopment =
   !process.env.NODE_ENV || process.env.NODE_ENV === "development";
 const ROOT_URL = !isDevelopment
-  ? "https://shade-spot.herokuapp.com/"
+  ? "https://shade-spot.herokuapp.com"
   : "http://127.0.0.1:5000";
 
 async function sendRequest(path, options = {}) {
@@ -28,7 +28,7 @@ const SignupForm = () => {
 
   const subscribeToNewsletter = ({ email }) =>
     //TODO: FIX REQUEST HANDLERS
-    sendRequest("https://shade-spot.herokuapp.com/api/v1/lists/add", {
+    sendRequest("/api/v1/lists/add", {
       body: JSON.stringify({ email }),
       mode: "cors",
     });
