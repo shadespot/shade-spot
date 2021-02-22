@@ -1,0 +1,1 @@
+"serviceWorker"in navigator&&window.addEventListener("load",(function(){navigator.serviceWorker.register("/shade-spot-rn/expo-service-worker.js",{scope:"/shade-spot-rn/"}).then((function(e){})).catch((function(e){console.info("Failed to register service-worker",e)}))}));
