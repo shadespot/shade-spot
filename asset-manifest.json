@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/shade-spot/static/js/app.14072c04.chunk.js",
-    "app.js.map": "/shade-spot/static/js/app.14072c04.chunk.js.map",
+    "app.js": "/shade-spot/static/js/app.63405c70.chunk.js",
+    "app.js.map": "/shade-spot/static/js/app.63405c70.chunk.js.map",
     "runtime~app.js": "/shade-spot/static/js/runtime~app.1b84a255.js",
     "runtime~app.js.map": "/shade-spot/static/js/runtime~app.1b84a255.js.map",
     "static/js/2.43ff5319.chunk.js": "/shade-spot/static/js/2.43ff5319.chunk.js",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime~app.1b84a255.js",
     "static/js/2.43ff5319.chunk.js",
-    "static/js/app.14072c04.chunk.js"
+    "static/js/app.63405c70.chunk.js"
   ]
 }

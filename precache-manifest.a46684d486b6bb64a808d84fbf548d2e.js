@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "19da8918fadabacc1a97",
-    "url": "/shade-spot/static/js/app.14072c04.chunk.js"
+    "revision": "ab78f159bb8a97ec518b",
+    "url": "/shade-spot/static/js/app.63405c70.chunk.js"
   },
   {
     "revision": "e9b1615107b9f14f3ce2",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/shade-spot/static/media/ShadeSpotLogoLight.2b5fc7f3.png"
   },
   {
-    "revision": "d35e59ea1b6e5d9fad93e50b10236513",
+    "revision": "f0b262ba9d77af19158f9748ec715780",
     "url": "/shade-spot/index.html"
   },
   {
