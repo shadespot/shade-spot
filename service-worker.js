@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/shade-spot/precache-manifest.140386a103e0853f5488a465ba3913ac.js"
+  "/shade-spot/precache-manifest.17455adc31891ef9c924cd37633129d3.js"
 );
 
 workbox.skipWaiting();
