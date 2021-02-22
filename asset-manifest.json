@@ -1,21 +1,21 @@
 {
   "files": {
-    "app.js": "/shade-spot-rn/static/js/app.a1a3b09c.chunk.js",
-    "app.js.map": "/shade-spot-rn/static/js/app.a1a3b09c.chunk.js.map",
-    "runtime~app.js": "/shade-spot-rn/static/js/runtime~app.c5a26c67.js",
-    "runtime~app.js.map": "/shade-spot-rn/static/js/runtime~app.c5a26c67.js.map",
-    "static/js/2.be743303.chunk.js": "/shade-spot-rn/static/js/2.be743303.chunk.js",
-    "static/js/2.be743303.chunk.js.map": "/shade-spot-rn/static/js/2.be743303.chunk.js.map",
-    "fonts/MaterialCommunityIcons.ttf": "/shade-spot-rn/./fonts/MaterialCommunityIcons.ttf",
-    "index.html": "/shade-spot-rn/index.html",
-    "manifest.json": "/shade-spot-rn/manifest.json",
-    "serve.json": "/shade-spot-rn/serve.json",
-    "static/js/2.be743303.chunk.js.LICENSE.txt": "/shade-spot-rn/static/js/2.be743303.chunk.js.LICENSE.txt",
-    "static/media/ShadeSpotLogoLight.png": "/shade-spot-rn/static/media/ShadeSpotLogoLight.2b5fc7f3.png"
+    "app.js": "/shade-spot/static/js/app.6545c7ca.chunk.js",
+    "app.js.map": "/shade-spot/static/js/app.6545c7ca.chunk.js.map",
+    "runtime~app.js": "/shade-spot/static/js/runtime~app.1b84a255.js",
+    "runtime~app.js.map": "/shade-spot/static/js/runtime~app.1b84a255.js.map",
+    "static/js/2.ed62b016.chunk.js": "/shade-spot/static/js/2.ed62b016.chunk.js",
+    "static/js/2.ed62b016.chunk.js.map": "/shade-spot/static/js/2.ed62b016.chunk.js.map",
+    "fonts/MaterialCommunityIcons.ttf": "/shade-spot/./fonts/MaterialCommunityIcons.ttf",
+    "index.html": "/shade-spot/index.html",
+    "manifest.json": "/shade-spot/manifest.json",
+    "serve.json": "/shade-spot/serve.json",
+    "static/js/2.ed62b016.chunk.js.LICENSE.txt": "/shade-spot/static/js/2.ed62b016.chunk.js.LICENSE.txt",
+    "static/media/ShadeSpotLogoLight.png": "/shade-spot/static/media/ShadeSpotLogoLight.2b5fc7f3.png"
   },
   "entrypoints": [
-    "static/js/runtime~app.c5a26c67.js",
-    "static/js/2.be743303.chunk.js",
-    "static/js/app.a1a3b09c.chunk.js"
+    "static/js/runtime~app.1b84a255.js",
+    "static/js/2.ed62b016.chunk.js",
+    "static/js/app.6545c7ca.chunk.js"
   ]
 }

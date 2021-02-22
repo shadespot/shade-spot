@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/shade-spot-rn/precache-manifest.4c160bdad74c503cc82a254223d78ed8.js"
+  "/shade-spot/precache-manifest.e163676cddca68bee625aed4b2f66d12.js"
 );
 
 workbox.skipWaiting();
@@ -29,7 +29,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/shade-spot-rn/index.html", {
+workbox.routing.registerNavigationRoute("/shade-spot/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
