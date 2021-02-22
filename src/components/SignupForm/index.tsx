@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import { View, StyleSheet } from "react-native";
 import { Button, Text, TextInput } from "react-native-paper";
 
-const ROOT_URL = "http://127.0.0.1:5000";
+const isDevelopment =
+  !process.env.NODE_ENV || process.env.NODE_ENV === "development";
+const ROOT_URL = !isDevelopment
+  ? "https://shade-spot.herokuapp.com/"
+  : "http://127.0.0.1:5000";
 
 async function sendRequest(path, options = {}) {
   const headers = { "Content-type": "application/json; charset=UTF-8" };
