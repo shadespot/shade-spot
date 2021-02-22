@@ -64,6 +64,3 @@ web-build/
 
 keys.txt
 node_modules
-.env
-
-package-lock.json

@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Shade Spot",
+    "slug": "shade-spot",
+    "extra": {
+      "mailChimpApiKey": "f735bd881a8c4f879fb4592b9f6466af-us2",
+      "mailChimpListId": "9a7965db29"
+    }
+  }
+}
