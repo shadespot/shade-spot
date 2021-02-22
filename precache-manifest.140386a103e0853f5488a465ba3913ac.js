@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "c755b71de4b08f8f3392",
-    "url": "/shade-spot/static/js/app.6545c7ca.chunk.js"
+    "revision": "5b003624a9417a63c441",
+    "url": "/shade-spot/static/js/app.2d709993.chunk.js"
   },
   {
     "revision": "e9b1615107b9f14f3ce2",
     "url": "/shade-spot/static/js/runtime~app.1b84a255.js"
   },
   {
-    "revision": "c39cc66985d6a987a88b",
-    "url": "/shade-spot/static/js/2.ed62b016.chunk.js"
+    "revision": "4b7f0a009bca71bef87c",
+    "url": "/shade-spot/static/js/2.43ff5319.chunk.js"
   },
   {
     "revision": "3c851d60ad5ef3f2fe43ebd263490d78",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/shade-spot/static/media/ShadeSpotLogoLight.2b5fc7f3.png"
   },
   {
-    "revision": "de85f1beb9159349de31299421877c15",
+    "revision": "25f56a2a3f8dcd1369f8af9950cbb4fa",
     "url": "/shade-spot/index.html"
   },
   {
@@ -37,7 +37,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "1cca25f2e61cdb7dd28b898e81578b23",
-    "url": "/shade-spot/static/js/2.ed62b016.chunk.js.LICENSE.txt"
+    "url": "/shade-spot/static/js/2.43ff5319.chunk.js.LICENSE.txt"
   },
   {
     "revision": "b02ee9497bd9b118f6bbe1fac80f35af",
