@@ -31,6 +31,7 @@ const SignupForm = () => {
     sendRequest("/api/v1/lists/add", {
       body: JSON.stringify({ email }),
       mode: "cors",
+      credentials: "include",
     });
   };
 
