@@ -13,6 +13,7 @@ async function sendRequest(path, options = {}) {
   const headers = {
     "Content-type": "application/json; charset=UTF-8",
     "Access-Control-Request-Method": "POST",
+    "Access-Control-Allow-Origin": "*",
   };
   const response = await fetch(
     `${ROOT_URL}${path}`,
