@@ -26,12 +26,19 @@ const SignupForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
-  const subscribeToNewsletter = ({ email }) =>
+  const subscribeToNewsletter = ({ email }) => {
     //TODO: FIX REQUEST HANDLERS
     sendRequest("/api/v1/lists/add", {
       body: JSON.stringify({ email }),
       mode: "cors",
     });
+  };
+
+  const handleClickEnter = (e) => {
+    if (e.nativeEvent.key === "Enter") {
+      subscribeToNewsletter({ email });
+    }
+  };
 
   const handleSignupPress = () => {
     subscribeToNewsletter({ email });
@@ -58,6 +65,7 @@ const SignupForm = () => {
           onChangeText={setEmail}
           label="Email"
           value={email}
+          onKeyPress={handleClickEnter}
         />
         <Button
           icon="send"
