@@ -10,7 +10,10 @@ const ROOT_URL = !isDevelopment
   : "http://127.0.0.1:5000";
 
 async function sendRequest(path, options = {}) {
-  const headers = { "Content-type": "application/json; charset=UTF-8" };
+  const headers = {
+    "Content-type": "application/json; charset=UTF-8",
+    "Access-Control-Request-Method": "POST",
+  };
   const response = await fetch(
     `${ROOT_URL}${path}`,
     Object.assign({ method: "POST" }, { headers }, options)
