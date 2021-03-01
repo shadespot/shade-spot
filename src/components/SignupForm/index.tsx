@@ -60,7 +60,7 @@ const SignupForm = () => {
           onChangeText={setEmail}
           label="Email"
           value={email}
-          onSubmitEditing={handleSignupPress}
+          onSubmitEditing={() => handleSignupPress()}
         />
         <Button
           icon="send"
