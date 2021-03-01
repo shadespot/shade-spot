@@ -68,6 +68,6 @@
     "predeploy": "expo build:web"
   },
   "private": true,
-  "homepage": "http://shadespot.github.io/shade-spot",
+  "homepage": "http://shadespot.github.io",
   "version": "0.1.0"
 }
