@@ -35,12 +35,6 @@ const SignupForm = () => {
     });
   };
 
-  const handleClickEnter = (e) => {
-    if (e.nativeEvent.key === "Enter") {
-      subscribeToNewsletter({ email });
-    }
-  };
-
   const handleSignupPress = () => {
     subscribeToNewsletter({ email });
   };
@@ -66,7 +60,7 @@ const SignupForm = () => {
           onChangeText={setEmail}
           label="Email"
           value={email}
-          onKeyPress={handleClickEnter}
+          onSubmitEditing={handleSignupPress}
         />
         <Button
           icon="send"
