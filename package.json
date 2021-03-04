@@ -67,8 +67,9 @@
     "storybook": "start-storybook -p 7007",
     "deploy": "gh-pages -d web-build",
     "predeploy": "expo build:web",
-    "web:deploy": "yarn ci && yarn web:e2e && yarn web:build && gh-pages -d web-build",
-    "web:build": "bash build.sh"
+    "web:build": "bash build.sh",
+    "web:deployCI": "yarn ci && yarn web:e2e && yarn web:build && gh-pages -d web-build",
+    "web:deploy": "yarn web:build && gh-pages -d web-build"
   },
   "private": true,
   "homepage": "http://shadespot.github.io",
