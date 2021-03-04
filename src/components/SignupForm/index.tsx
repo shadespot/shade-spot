@@ -26,13 +26,13 @@ async function sendRequest(path, options = {}) {
   return data;
 }
 
-const SignupForm = () => {
+const SignupForm = ({ returnFn }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
   const subscribeToNewsletter = ({ email }) => {
     //TODO: FIX REQUEST HANDLERS
-    sendRequest("/api/v1/lists/add", {
+    return sendRequest("/api/v1/lists/add", {
       body: JSON.stringify({ email }),
       mode: "cors",
       credentials: "include",
@@ -40,7 +40,12 @@ const SignupForm = () => {
   };
 
   const handleSignupPress = () => {
-    subscribeToNewsletter({ email });
+    const val = subscribeToNewsletter({ email });
+    if (val.subscribed) {
+      if (!!returnFn && typeof returnFn === "function") {
+        returnFn();
+      }
+    }
   };
 
   return (
