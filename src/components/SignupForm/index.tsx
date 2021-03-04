@@ -21,7 +21,9 @@ async function sendRequest(path, options = {}) {
   );
   const data = await response.json();
   if (data.error) {
-    throw new Error(data.error);
+    if (options.errorHandler) {
+      options.errorHandler(data);
+    }
   }
   return data;
 }
@@ -29,19 +31,26 @@ async function sendRequest(path, options = {}) {
 const SignupForm = ({ returnFn }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleErrorMessage = (e) => {
+    setErrorMessage(e.message);
+  };
 
   const subscribeToNewsletter = ({ email }) => {
     //TODO: FIX REQUEST HANDLERS
+    setErrorMessage("");
     return sendRequest("/api/v1/lists/add", {
       body: JSON.stringify({ email }),
       mode: "cors",
       credentials: "include",
+      errorHandler: handleErrorMessage,
     });
   };
 
-  const handleSignupPress = () => {
-    const val = subscribeToNewsletter({ email });
-    if (val.subscribed) {
+  const handleSignupPress = async () => {
+    const val = await subscribeToNewsletter({ email });
+    if (val.status === "subscribed") {
       if (!!returnFn && typeof returnFn === "function") {
         returnFn();
       }
@@ -53,6 +62,7 @@ const SignupForm = ({ returnFn }) => {
       <Text style={styles.textStyles}>
         Find the Coolest Spot at Your Next Event
       </Text>
+      <Text style={styles.errorMessage}>{errorMessage}</Text>
       <TextInput
         mode="flat"
         style={styles.textStyles}
@@ -98,10 +108,15 @@ const styles = StyleSheet.create({
     fontSize: fontSize.fontMd,
     marginVertical: spacing.mdGap,
     backgroundColor: colors.white,
+    paddingLeft: 0,
     fontWeight: "800",
     font: "Default",
     width: "100%",
     textAlign: "center",
+  },
+  errorMessage: {
+    color: colors.shadyError,
+    fontSize: fontSize.fontMd,
   },
   openButton: {
     backgroundColor: "#F194FF",

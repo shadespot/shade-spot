@@ -47,7 +47,7 @@ function Home() {
         isOpen={showModal}
         closeFn={handleHideSignupModal}
       >
-        <SignupForm returnFn={handleShowSignupModal} />
+        <SignupForm returnFn={handleHideSignupModal} />
       </Modal>
     </View>
   );

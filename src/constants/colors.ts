@@ -1,5 +1,6 @@
 export const colors = {
   shadyOranje: "#FF7366",
+  shadyError: "#EE2355",
   sunYellow: "#FFC96b",
   skyBlue: "#4DACFF",
   charcoal: "#333333",
